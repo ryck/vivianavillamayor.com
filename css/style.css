@@ -212,6 +212,14 @@ table { border-collapse: collapse; border-spacing: 0; }
    Primary styles
    Author: 
    ========================================================================== */
+   
+   .container.wrapper {
+   		background-color: #FFFFFF;
+		border: 1px solid #F6F7FE;
+		border-radius: 5px 5px 5px 5px;
+		box-shadow: 1px 1px 5px rgba(11, 30, 173, 0.3);
+		margin: 2em auto;
+   }
 
   @font-face {
       font-family: 'TangerineRegular';
@@ -239,7 +247,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
    
    body {
-      background-color: #ECF1EA;
+      background-color: #f6f7fe;
       color: #333;
    }
     
@@ -247,7 +255,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
    }
    .maintitle {
-      text-align: right;
+      text-align: left;
+      color: #121d6c;
    }
    .maintitle h1 {
       font-family: 'TangerineBold';
@@ -259,7 +268,90 @@ table { border-collapse: collapse; border-spacing: 0; }
       font-size: 2.5em;
       margin: 0.1em 0;
    }
+   .navigation {
+   	background-color: #121D6C;
+   	width: 100%;
+   }
+   ul.navmenu {
+   	
+   }
+   ul.navmenu li {
+	display: block;
+	float: left;
+	height: 2.5em;
+	line-height: 2.5em;
+	margin: 0;
+	text-align: center;
+	width: 20%;
+   }
+   ul.navmenu a {
+	color: #FFFFFF;
+	display: block;
+	font-size: 150%;
+	text-decoration: none;   	
+   }
+   ul.navmenu li a:hover {
+   	background-color: #f48e06;
+   	color: #121D6C;
+   }
+   
+	ul.navmenu li a.active {
+	color: #6CCFF6;
+	}
+	
+	#main {
+		padding: 1em;
+		font-size: 140%;
+	}
+	.imgi {
+		border: 1px solid silver;
+		float: left;
+		margin-right: 1em;
+		padding: 3px;
+	}
+	.imgd {
+		border: 1px solid silver;
+		float: right;
+		margin-left: 1em;
+		padding: 3px;
+	}
+	.pie {
+		color: #438DBC;
+	  font-size: 90%;
+	  padding: 1em;
+	  text-align: center;
+	}
+	.pie a {
+		color: #438DBC;
+		text-decoration: none;
 
+	}
+
+	hr.faded {
+	  clear: both; 
+	  float: none; 
+	  width: 100%; 
+	  height: 1px;
+	  margin: 1.4em 0;
+	  border: none; 
+	  background: #ddd;
+	  background-image: -webkit-gradient(
+	      linear,
+	      left bottom,
+	      right bottom,
+	      color-stop(0, rgb(255,255,255)),
+	      color-stop(0.1, rgb(221,221,221)),
+	      color-stop(0.9, rgb(221,221,221)),
+	      color-stop(1, rgb(255,255,255))
+	  );
+	  background-image: -moz-linear-gradient(
+	      left center,
+	      rgb(255,255,255) 0%,
+	      rgb(221,221,221) 10%,
+	      rgb(221,221,221) 90%,
+	      rgb(255,255,255) 100%
+	  );
+	}
 
 /* #Lists
 ================================================== */
